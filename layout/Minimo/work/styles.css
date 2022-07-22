@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    width: 1200px;
+}
+
+.header{
+    margin: 70px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-line{
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+    width: 640px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item{
+    display: block;
+}
