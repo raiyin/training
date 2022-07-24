@@ -1,19 +1,50 @@
-body{
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Playfair_Display";
+    src: url("./fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
     margin: 0;
-    width: 1200px;
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.header{
-    margin: 70px 70px;
+header{
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 75px;
 }
 
 .header-line{
     display: flex;
 }
 
-.navigation{
+nav{
     display: flex;
     width: 640px;
     align-items: center;
@@ -22,4 +53,96 @@ body{
 
 .nav-item{
     display: block;
+}
+
+article{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.post-image{
+    position: relative;
+    width: 1060px;
+    float: left;
+	overflow: hidden; /* this is important */
+    margin-bottom: 90px;
+}
+
+.first-post-image{
+    width: 1060px;
+    margin: -170px 0;
+}
+
+.photodiary{
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #b4ad9e;
+    font-family: "Ubuntu", "Arial", sans-serif;
+}
+
+.title{
+    text-decoration: none;
+    color: #626262;
+    font-family: "Playfair_Display", "Arial", sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.p-text{
+    font-family: "Playfair_Display", "Arial", sans-serif;
+    color: #626262;
+    margin-bottom: 45px;
+}
+
+.post-text{    
+    margin-left: 80px;
+    padding-right: 80px;
+}
+
+.leave-comment{
+    margin-bottom: 100px;
+}
+
+.photodiary-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1060px;
+    margin: auto;
+    margin-bottom: 165px;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+.photodiary-block{
+    width: 420px;
+}
+
+.photodiary-block>img{
+    margin-bottom: 20px;
+    width: 420px;
+    height: 300px;
+}
+
+.comment{
+    text-decoration: none;
+    color: #b4ad9e;
+    font-family: "Ubuntu", "Arial", sans-serif;
+    margin-bottom: 40px;
+}
+
+.load-more{
+    width: 165px;
+    height: 65px;
+    font-family: "Playfair_Display", "Arial", sans-serif;
+    color: #626262;
+    font-size: large;
+    margin: auto;
+    margin-bottom: 100px;
 }
