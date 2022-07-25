@@ -1,3 +1,14 @@
+
+/* tableof contents
+    1. fonts
+    2. global styles
+*/
+
+
+/*  ==============
+        fonts
+    ============== */
+
 @font-face {
     font-family: "Ubuntu";
     src: url("./fonts/Ubuntu/Ubuntu-Regular.ttf");
@@ -7,6 +18,10 @@
     font-family: "Playfair_Display";
     src: url("./fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
   }
+
+/*  ==============
+    global styles
+    ============== */
 
   body,
   h1,
@@ -24,6 +39,10 @@
   dd {
     margin: 0;
   }
+
+/*  ==============
+        layout
+    ============== */
 
 .container{
     display: flex;
@@ -120,11 +139,11 @@ a{
     box-sizing: border-box;
 }
 
-.photodiary-block{
+figure{
     width: 420px;
 }
 
-.photodiary-block>img{
+figure>img{
     margin-bottom: 20px;
     width: 420px;
     height: 300px;
@@ -136,6 +155,10 @@ a{
     font-family: "Ubuntu", "Arial", sans-serif;
     margin-bottom: 40px;
 }
+
+/*  ==============
+      components
+    ============== */
 
 .load-more{
     width: 165px;
