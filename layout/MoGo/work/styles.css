@@ -1,0 +1,193 @@
+/* tableof contents
+    1. fonts
+    2. global styles
+*/
+
+
+/*  ==============
+        fonts
+    ============== */
+
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("./fonts/Montserrat-regular.ttf");
+}
+
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("./fonts/Montserrat-bold.ttf");
+}
+
+@font-face {
+    font-family: "KaushanScript";
+    src: url("./fonts/KaushanScript-Regular.otf");
+}
+
+
+/*  =============
+    global styles
+    ============= */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/*  ==============
+        layout
+    ============== */
+header {
+    background-image: url(./images/picture.png);
+    width: 1920px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.header-column{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo {
+    font-family: "Montserrat-bold", "Verdana bold", "Ebrima bold";
+    font-size: 30pt;
+}
+
+nav{
+    display: flex;
+    width: 625px;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-family: "Montserrat-regular", "Verdana regular", "Ebrima bold";
+    font-size: 14pt;
+    font-variant-caps: all-petite-caps;
+}
+
+.focused {
+    color: #fce38a;
+    text-decoration: none; 
+    position: relative; 
+}
+
+.focused:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -12px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #fce38a;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.creative-template {
+    font-family: "KaushanScript";
+    font-size: 72pt;
+    text-align: center;
+}
+
+.welcome-mogo {
+    font-family: "Montserrat-bold", "Verdana bold", "Ebrima bold";
+    font-size: 150pt;
+    font-variant-caps: all-petite-caps;
+    text-align: center;
+    margin-top: 70px;
+    line-height: 140px;
+    position: relative; 
+}
+
+.welcome-mogo:after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -73px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 60px;
+    background: #fff;
+}
+
+.btn-learnmore{
+    font-variant-caps: all-petite-caps;
+    margin-top: 125px;
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    border: solid white;
+    border-width: 3px;
+    font-family: "Montserrat-bold", "Verdana bold", "Ebrima bold";
+    font-size: 14pt;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85pt;
+}
+
+
+.slider-item{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    position: relative;
+    min-width: 200pt;
+}
+
+.slider-item::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: 45px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.slider-num-subitem{
+    font-family: "Montserrat-bold", "Verdana bold", "Ebrima bold";
+    font-size: 24pt;
+    margin-right: 10pt;
+}
+
+.slider-text-subitem{
+    font-family: "Montserrat-regular", "Verdana regular", "Ebrima bold";
+    font-size: 18pt;
+    font-variant-caps: all-petite-caps;
+}
