@@ -51,25 +51,29 @@ dd {
         layout
     ============== */
 header {
-    background-image: url(./images/picture.png);
+    background-image: linear-gradient(0deg, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(./images/picture.png);
     width: 1920px;
     height: 1000px;
     display: flex;
     justify-content: center;
     color: #fff;
+    position: relative;
+    /*background: linear-gradient(0deg, rgba(252, 227, 138, 0.5), rgba(243, 129, 129, 0.5));*/
 }
 
-.header-column{
+
+.header-column {
     width: 1200px;
     display: flex;
     flex-direction: column;
 }
 
-.logo-nav{
+.logo-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+
 }
 
 .logo {
@@ -77,7 +81,7 @@ header {
     font-size: 30pt;
 }
 
-nav{
+nav {
     display: flex;
     width: 625px;
     justify-content: space-between;
@@ -91,8 +95,8 @@ nav{
 
 .focused {
     color: #fce38a;
-    text-decoration: none; 
-    position: relative; 
+    text-decoration: none;
+    position: relative;
 }
 
 .focused:after {
@@ -106,7 +110,7 @@ nav{
     background: #fce38a;
 }
 
-.header-content{
+.header-content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -126,10 +130,10 @@ nav{
     text-align: center;
     margin-top: 70px;
     line-height: 140px;
-    position: relative; 
+    position: relative;
 }
 
-.welcome-mogo:after{
+.welcome-mogo:after {
     position: absolute;
     content: '';
     height: 3px;
@@ -141,7 +145,7 @@ nav{
     background: #fff;
 }
 
-.btn-learnmore{
+.btn-learnmore {
     font-variant-caps: all-petite-caps;
     margin-top: 125px;
     width: 160px;
@@ -154,14 +158,14 @@ nav{
     font-size: 14pt;
 }
 
-.slider{
+.slider {
     display: flex;
     justify-content: space-between;
     margin-top: 85pt;
 }
 
 
-.slider-item{
+.slider-item {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
@@ -169,7 +173,7 @@ nav{
     min-width: 200pt;
 }
 
-.slider-item::before{
+.slider-item::before {
     position: absolute;
     content: '';
     height: 3px;
@@ -180,13 +184,13 @@ nav{
     background: #fff;
 }
 
-.slider-num-subitem{
+.slider-num-subitem {
     font-family: "Montserrat-bold", "Verdana bold", "Ebrima bold";
     font-size: 24pt;
     margin-right: 10pt;
 }
 
-.slider-text-subitem{
+.slider-text-subitem {
     font-family: "Montserrat-regular", "Verdana regular", "Ebrima bold";
     font-size: 18pt;
     font-variant-caps: all-petite-caps;
